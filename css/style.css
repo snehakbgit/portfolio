@@ -1,0 +1,221 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&family=Newsreader:opsz@6..72&family=Roboto+Slab&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+  --gradient: linear-gradient(270deg, rgba(160,233,255,1) 30%, rgba(161,98,232,1) 50%, rgba(240,147,176,1) 70%, rgba(237,202,133,1) 94%);
+
+}
+
+body{
+    background-color: #111;
+    color: #ffffff;
+    font-family: "Lexend Deca";
+    text-align: center;
+}
+h1{
+    font-family: 'Brygada 1918', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: linear-gradient(270deg, rgba(160,233,255,1) 30%, rgba(161,98,232,1) 50%, rgba(240,147,176,1) 70%, rgba(237,202,133,1) 94%);
+}
+.grad{
+    padding-top: 1rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+h5{
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 100px;
+}
+.round-div{
+    padding: 7% 15%;
+    margin: 5%;
+    border-radius: 20px;
+    background-color: #191919;
+}
+
+#works .round-div{
+    padding: 7% 8%;
+}
+
+#header .container-fluid{
+    padding: 7% 10%;
+}
+#footer .container-fluid{
+    padding: 12% 20%;
+}
+.nav-link{
+    color: white;
+    margin: 5px 0 2px 50px;
+    font-weight: 500;
+}
+
+/* carousel section */
+
+#carousel .round-div {
+    padding: 5% 8%;
+}
+.feature{
+    padding: 0 0 0 5%;
+}
+
+/* Lottie Player */
+
+.animation{
+    transform: scale(1.5);
+}
+
+/* Anchor Tag */
+
+a {
+  position: relative;
+  display: block;
+  padding: 4px 8px;
+  color: #ffffff;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.08em;
+  font-weight: bolder;
+  margin: 10px 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #f09aab;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.15s linear;
+}
+a:hover {
+    color: #95a5a6;
+}
+a:hover::after {
+    transform: scaleX(1) scaleZ(2);
+    /* transform-origin: left; */
+}
+
+
+
+
+/* Comparison Slider */
+
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+}
+.ba-slider img {
+  width: 100%;
+  display: block;
+}
+.resize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.handle {
+  /* Thin line seperator */
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  margin-left: -2px;
+  background: rgba(0, 0, 0, 0.5);
+  /* cursor: ew-resize; */
+}
+.handle:after {
+  /* Big green knob  */
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  content: '\21d4';
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  line-height: 58px; /* Arrow vertical position */
+  background: #31af92;
+  /* @green */
+  border: 1px solid #31af92;
+  /* darken(@green, 5%) */
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  /* lighten(@green, 20%)*/
+  transform: scale(0.5);
+}
+
+.draggable:after {
+  width: 48px;
+  height: 48px;
+  margin: -24px 0 0 -24px;
+  line-height: 40px; /* Arrow vertical position : after */
+  font-size: 30px;
+}
+
+
+/* Footer Social Icon */
+
+
+.wrapper {
+display: inline-flex;
+list-style: none;
+padding-left: 0;
+}
+.wrapper .icon {
+position: relative;
+background: #1f1f1f;
+border-radius: 50%;
+padding: 5px;
+margin: 10px;
+width: 50px;
+height: 50px;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.linkedin:hover {
+background: #1877F2;
+color: #ffffff;
+}
+.github:hover{
+background: #333333;
+color: #ffffff;
+}
+
+.email:hover{
+background: #CD201F;
+color: #ffffff;
+}
+
+
+
+.card-work{
+  min-height: 100vh;
+    background: #212534;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
