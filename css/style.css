@@ -21,7 +21,7 @@ h1{
     color: linear-gradient(270deg, rgba(160,233,255,1) 30%, rgba(161,98,232,1) 50%, rgba(240,147,176,1) 70%, rgba(237,202,133,1) 94%);
 }
 .grad{
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
@@ -59,7 +59,12 @@ h5{
     padding: 5% 8%;
 }
 .feature{
+  text-align: left;
     padding: 0 0 0 5%;
+}
+.feature-video{
+  text-align: left;
+  padding: 0 5% 0 0;
 }
 
 /* Lottie Player */
