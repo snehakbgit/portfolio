@@ -21,7 +21,7 @@ h1{
     color: linear-gradient(270deg, rgba(160,233,255,1) 30%, rgba(161,98,232,1) 50%, rgba(240,147,176,1) 70%, rgba(237,202,133,1) 94%);
 }
 .grad{
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
