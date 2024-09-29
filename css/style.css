@@ -8,65 +8,104 @@
 
 }
 
+.g{ color: rgba(160,233,255,1); }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
 body{
     background-color: #111;
     color: #ffffff;
     font-family: "Lexend Deca";
     text-align: center;
 }
+
+.grad{
+  padding-top: 1rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+
+/* .start  h1{
+  margin-top: 10%;
+} */
+
 h1{
     font-family: 'Brygada 1918', serif;
     font-size: 4rem;
     font-weight: bold;
-    color: linear-gradient(270deg, rgba(160,233,255,1) 30%, rgba(161,98,232,1) 50%, rgba(240,147,176,1) 70%, rgba(237,202,133,1) 94%);
+    color: var(--gradient)
 }
-.grad{
-    padding-top: 1rem;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
-}
+
 h5{
     font-family: 'Londrina Sketch', cursive;
     font-size: 100px;
 }
-.round-div{
-    padding: 7% 15%;
-    margin: 5%;
-    border-radius: 20px;
-    background-color: #191919;
-}
 
-#works .round-div{
-    padding: 7% 8%;
-}
-
-#header .container-fluid{
-    padding: 7% 10%;
-}
-#footer .container-fluid{
-    padding: 12% 20%;
-}
 .nav-link{
-    color: white;
-    margin: 5px 0 2px 50px;
-    font-weight: 500;
+  color: white;
+  margin: 5px 0 2px 50px;
+  font-weight: 500;
 }
 
-/* carousel section */
-
-#carousel .round-div {
-    padding: 5% 8%;
+.about-txt {
+  margin-top: 5%;
+  font-size: 1.1rem;
 }
-.feature{
+
+
+.about-div{
+    padding: 0% 8%;
+    margin: 2% 10%;
+}
+
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+.work-title {
+  display: flex;
+  justify-content: space-between;
+}
+.work-content {
+  margin-top: 2%;
+}
+
+
+
+
+.m-15 { 
+  margin: 10% 15%;
+}
+.p-5 {
+  padding: 5%;
+}
+
+.la {
   text-align: left;
-    padding: 0 0 0 5%;
-}
-.feature-video{
-  text-align: left;
-  padding: 0 5% 0 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* This section contains styling of all the different element present in the website */
 /* Lottie Player */
 
 .animation{
@@ -75,19 +114,19 @@ h5{
 
 /* Anchor Tag */
 
-a {
+.a {
   position: relative;
   display: block;
   padding: 4px 8px;
   color: #ffffff;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 1.08em;
-  font-weight: bolder;
-  margin: 10px 20px;
+  margin: 5px 0 2px 50px;
+  font-weight: 500;
   text-decoration: none;
   transition: 0.5s;
 }
-a::after {
+.a::after {
     position: absolute;
     content: "";
     top: 100%;
@@ -99,10 +138,10 @@ a::after {
     transform-origin: left;
     transition: transform 0.15s linear;
 }
-a:hover {
+.a:hover {
     color: #95a5a6;
 }
-a:hover::after {
+.a:hover::after {
     transform: scaleX(1) scaleZ(2);
     /* transform-origin: left; */
 }
@@ -213,9 +252,8 @@ color: #ffffff;
 }
 
 
-
 .card-work{
-  min-height: 100vh;
+    min-height: 100vh;
     background: #212534;
     display: flex;
     align-items: center;
