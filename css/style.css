@@ -57,6 +57,10 @@ h5{
   font-weight: 500;
 }
 
+.initial{
+  margin-top: 10%;
+}
+
 .about-txt {
   margin-top: 5%;
   font-size: 1.1rem;
@@ -71,6 +75,7 @@ h5{
 
 .container-fluid{
     padding: 7% 15%;
+    height: 100vh;
 }
 
 .work-title {
